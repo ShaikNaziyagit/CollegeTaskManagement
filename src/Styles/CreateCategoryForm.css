@@ -1,0 +1,51 @@
+.form-container {
+  background: #e7c6ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Box */
+.form-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  font-size : 24px;
+  font-weight: bold;
+  color: #6a0572;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 5px 0 15px;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #c56cf0;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #9b5de5;
+}
