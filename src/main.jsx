@@ -1,23 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import { useState } from 'react'
-import './index.css'
-import App from './App.jsx'
-import CategoryContext from './Components/CategoryContext.js'
-function Main(){
-  const [categories,setCategories] = useState([]);
-  return(
-    <CategoryContext.Provider value={{categories,setCategories}}>
-      <App></App>
-    </CategoryContext.Provider>
-  );
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { AuthProvider } from "./context/AuthContext";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-    <Main></Main>
-    </BrowserRouter>
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <AuthProvider>
+    <App />
+  </AuthProvider>
+);

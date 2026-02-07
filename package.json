@@ -1,5 +1,5 @@
 {
-  "name": "taskmanagement",
+  "name": "finaltaskmanagement",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "@hello-pangea/dnd": "^18.0.1",
+    "chart.js": "^4.5.1",
+    "react": "^19.2.4",
+    "react-calendar": "^6.0.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
